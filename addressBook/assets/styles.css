@@ -1,0 +1,39 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+section {
+	margin: 1rem auto;
+	max-width: 80%;
+}
+
+.contacts {
+	list-style: none;
+	padding: 0;
+}
+.contacts li:nth-child(odd) {
+	background-color: lightgray;
+}
+
+.media {
+	display: flex;
+	padding: 0.5rem;
+}
+.media .image {
+	border-radius: 50%;
+	border: 1px solid gray;
+	width: 5rem;
+	height: 5rem;
+}
+.media .body {
+	padding-left: 1rem;
+}
+.media .name {
+	font-size: 1.25rem;
+	margin: 0.5rem 0;
+}
+
+label, .btn-submit {
+	display: block;
+	margin-top: 0.5rem;
+}
