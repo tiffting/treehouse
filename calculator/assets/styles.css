@@ -1,0 +1,73 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+section {
+	font-size: 2rem;
+	margin: 0 auto;
+	max-width: 320px;
+}
+.calculator {
+	background-color: black;
+	display: grid;
+	grid-template-areas:
+		"screen"
+		"buttons";
+	grid-template-rows: 20% 80%;
+	height: 32rem;
+	padding: 0.5rem;
+}
+.screen {
+	color: white;
+	grid-area: screen;
+	font-size: 5rem;
+	max-width: 320px;
+	overflow: hidden;
+	text-align: right;
+	text-overflow: '';
+}
+.tape {
+	display: none;
+}
+.buttons {
+	display: grid;
+	grid-area: buttons;
+	grid-gap: 0.5rem;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.btn {
+	border: 1px solid transparent;
+	border-radius: 30px;
+	background-color: #999;
+	color: white;
+	cursor: pointer;
+}
+.btn-0 {
+	grid-column-start: span 2;
+	padding-left: 1.75rem;
+	text-align: left;
+}
+.btn-interrupt {
+	background-color: lightgray;
+	color: #333;
+}
+.btn-equals {
+	color: white;
+}
+.btn-operation, .btn-equals {
+	background-color: orange;
+}
+.btn-active {
+	background-color: white;
+	color: orange;
+}
+/* TODO: implement flipping of signs */
+.btn-flip {
+	display: none;
+}
+.btn-clear {
+	grid-column-start: span 2;
+	padding-left: 1.5rem;
+	text-align: left;
+}
